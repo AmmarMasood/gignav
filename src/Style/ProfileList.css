@@ -1,0 +1,161 @@
+.ProfileList-main {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  background-color: #f6f7fb;
+  /* border: 2px solid red; */
+  /* height: 100vh; */
+}
+.ProfileList-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 5px;
+  height: fit-content;
+}
+.ProfileList-filters {
+  /* border: 2px solid blue; */
+}
+
+.ProfileList-profiles {
+  /* border: 2px solid green; */
+}
+.ProfileList-loader {
+  text-align: center;
+  margin-top: 20%;
+}
+.ProfileList-pagination {
+  padding: 40px;
+  text-align: right;
+  width: 100%;
+  background-color: rgba(220, 220, 220, 0.8);
+}
+.ProfileFilter-container {
+  /* border: 2px solid red; */
+}
+.ProfileFilter-heading {
+  /* border: 2px solid yellow; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  color: #555862;
+
+  opacity: 0.4;
+}
+.ProfileFilter-types {
+  /* border: 2px solid black; */
+}
+.ProfileList-freelancer-card-container {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 1fr;
+}
+.ProfileList-freelancer-card-container--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProfileList-freelancer-card-container-1 {
+  padding: 5px;
+  border: 1px solid red;
+  font-family: "Montserrat", sans-serif;
+}
+.ProfileList-freelancer-card-container-1--name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  color: #414754;
+}
+.ProfileList-freelancer-card-container-1--job {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #a2a8b7;
+}
+.ProfileList-freelancer-card-container-1--country {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #3695ef;
+}
+.ProfileList-freelancer-card-container-1--intro {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #555862;
+  padding: 10px 0px 0px 0px;
+}
+.ProfileList-freelancer-card-container-2 {
+  padding: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.ProfileList-freelancer-card-container-2--available {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  margin: 5px;
+}
+.ProfileList-freelancer-card-container-2--jobsuccess {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px;
+  color: #555862;
+}
+.ProfileList-freelancer-card-container-2--rate {
+  margin: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #555862;
+}
+.MuiDialog-root {
+  left: 20% !important;
+}
+.ProfileList--filter-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ProfileList-filters {
+    display: none;
+  }
+  .ProfileList-container {
+    grid-template-columns: 1fr;
+  }
+  .ProfileList-main {
+    padding: 0;
+  }
+  .ProfileList--filter-btn {
+    display: inline;
+  }
+  .MuiDialog-root {
+    left: 0 !important;
+  }
+}
+@media (max-width: 500px) {
+  .ProfileList-freelancer-card-container-2--rate {
+    display: none;
+  }
+}

@@ -1,0 +1,187 @@
+.ProfileDetails-container {
+  border: 2px solid red;
+  padding: 50px 10px 10px 10px;
+}
+
+.ProfileDetails-overview {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  border: 2px solid black;
+}
+
+.ProfileDetails-img {
+  border: 2px solid yellow;
+  height: 150px;
+  width: 150px;
+}
+.ProfileDetails-img--display {
+}
+.ProfileDetails-info {
+  border: 2px solid green;
+  display: grid;
+  align-content: center;
+}
+.ProfileDetails-info--name {
+  border: 2px solid green;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 5px;
+  color: #555862;
+}
+.ProfileDetails-info--location {
+  padding: 5px;
+  border: 2px solid blue;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #3695ef;
+}
+.ProfileDetails-info--profession {
+  padding: 5px;
+  border: 2px solid yellow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a2a8b7;
+}
+.ProfileDetails-info--timezone {
+  border: 2px solid red;
+  font-style: normal;
+  font-weight: 600;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #a2a8b7;
+}
+.ProfileDetails-scores {
+  border: 2px solid red;
+  display: grid;
+}
+.ProfileDetails-scores--1 {
+  border: 2px solid yellow;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #555862;
+}
+
+.ProfileDetails-scores--2 {
+  border: 2px solid green;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #555862;
+}
+
+.ProfileDetails-scores--3 {
+  border: 2px solid red;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.ProfileDetails-scores--4 {
+  border: 2px solid red;
+  margin: 5px;
+}
+
+/* details section */
+.ProfileDetails-details {
+  padding: 10px;
+}
+.ProfileDetails-details-bio {
+  padding: 10px;
+}
+.ProfileDetails-details-bio--heading {
+  padding: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #414754;
+}
+.ProfileDetails-details-bio--txt {
+  padding: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #555862;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.ProfileDetails-details-skills {
+  padding: 10px;
+}
+
+.ProfileDetails-details-skills--show {
+  padding: 5px;
+}
+
+.ProfileDetails-edu {
+  padding: 10px;
+}
+.ProfileDetails-details-bio--contact {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .ProfileDetails-container {
+    padding: 10px;
+  }
+  .ProfileDetails-overview {
+    grid-template-columns: 1fr;
+  }
+  .ProfileDetails-img {
+    border: 2px solid yellow;
+    height: 150px;
+    width: 150px;
+  }
+  .ProfileDetails-img {
+    display: flex;
+    justify-self: center;
+  }
+
+  .ProfileDetails-info--name {
+    text-align: center;
+  }
+  .ProfileDetails-info--location {
+    text-align: center;
+  }
+  .ProfileDetails-info--profession {
+    text-align: center;
+  }
+  .ProfileDetails-info--timezone {
+    text-align: center;
+  }
+  .ProfileDetails-scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-items: center;
+  }
+}

@@ -1,0 +1,25 @@
+.Navbar-btns {
+  /* border: 2px solid red; */
+  float: right;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.Navbar-iconbtn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .Navbar-btns {
+    display: none;
+  }
+  .Navbar-iconbtn {
+    /* border: 2px solid red; */
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

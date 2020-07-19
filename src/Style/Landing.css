@@ -1,0 +1,486 @@
+.Landing-container {
+  background: #f6f7fb;
+  height: 100%;
+  position: relative;
+}
+.Landing-header {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+}
+.Landing-back {
+  z-index: -1;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  clip-path: polygon(100% 10%, 24% 100%, 100% 100%);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 7.29%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    #3695ef;
+}
+.Landing-header--1 {
+  /* border: 2px solid black; */
+  padding: 10%;
+}
+.Landing-header--1-text {
+  padding: 10px;
+  /* border: 2px solid green; */
+  color: #293649;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.Landing-header--1-search {
+  padding: 10px;
+  /* border: 2px solid yellow; */
+  display: flex;
+}
+.Landing-header--1-specific {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #a2a8b7;
+  /* border: 2px solid blue; */
+}
+
+.Landing-header--2 {
+  /* padding: 5000px; */
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.Landing-header--2-text {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+.Landing-header--2-text-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #ffffff;
+}
+.Landing-header--2-text-job {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  padding-top: 5px;
+  color: #ffffff;
+}
+.Landing-header--2-text-stars {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.Landing-header--2-img {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: flex-end;
+}
+.Landing-header--2-img img {
+  height: 500px;
+  z-index: -1;
+}
+
+/* LANDING COMPANIES CSS STARTS*/
+.Landing-companies {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  background-color: #293649;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+/* LANDING COMPANIES END */
+/* LANDING OUR SERVICES START */
+.Landing-services {
+  background-color: #ffffff;
+  padding: 60px;
+}
+.Landing-services-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: center;
+  color: #293649;
+}
+.Landing-services-text {
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #a2a8b7;
+}
+.Landing-services-cards {
+  margin-top: 40px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+}
+.Landing-services-card {
+  width: 350px;
+  height: 450px;
+  box-shadow: 0px 2px 4px rgba(85, 88, 98, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+.Landing-services-card-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px;
+  text-shadow: 0px 2px 2px rgba(238, 226, 226, 0.2);
+}
+.Landing-services-card-btn {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  margin: 35px;
+  bottom: 0;
+}
+
+.Landing-services-card--1 {
+  background: linear-gradient(
+      0deg,
+      rgba(65, 155, 240, 0.1),
+      rgba(65, 155, 240, 0.1)
+    ),
+    linear-gradient(0deg, #000000 4.49%, rgba(0, 0, 0, 0) 56.93%),
+    linear-gradient(180deg, #000000 0%, #00000000 35.74%),
+    url(https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+}
+.Landing-services-card--2 {
+  background: linear-gradient(
+      0deg,
+      rgba(65, 155, 240, 0.1),
+      rgba(65, 155, 240, 0.1)
+    ),
+    linear-gradient(0deg, #000000 4.49%, rgba(0, 0, 0, 0) 56.93%),
+    linear-gradient(180deg, #000000 0%, #00000000 35.74%),
+    url(https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+}
+.Landing-services-card--3 {
+  background: linear-gradient(
+      0deg,
+      rgba(65, 155, 240, 0.1),
+      rgba(65, 155, 240, 0.1)
+    ),
+    linear-gradient(0deg, #000000 4.49%, rgba(0, 0, 0, 0) 56.93%),
+    linear-gradient(180deg, #000000 0%, #00000000 35.74%),
+    url(https://images.unsplash.com/photo-1540476547779-348beb642680?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+/* LANDING OUR SERVICES END */
+/* LANDING HOW IT WORKS START*/
+.Landing-howitworks {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(180deg, #f6f7fb 0%, rgba(246, 247, 251, 0) 100%);
+}
+.Landing-howitworks-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: center;
+  color: #293649;
+}
+.Landing-howitworks-choose {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.Landing-howitworks-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #a2a8b7;
+}
+.Landing-howitworks-step {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+}
+.MuiTypography-body1 {
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 0.00938em !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+}
+.Landing-howitworks-step--1 {
+  padding-top: 50px;
+}
+.Landing-howitworks-step--2 {
+}
+.Landing-howitworks-step--3 {
+}
+
+.Landing-howitworks-step-card {
+  /* border: 1px solid red; */
+  padding: 80px;
+}
+.Landing-howitworks-step-text {
+  /* border: 1px solid blue; */
+  padding: 10px;
+  justify-items: center;
+}
+.Landing-howitworks-step-text--heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+
+  color: #293649;
+}
+.Landing-howitworks-step-text--txt {
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #293649;
+
+  opacity: 0.8;
+}
+
+/* LANDING HOW IT WORKS ENDS */
+/* LANDING GET STARTED START */
+.Landing-getstarted {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 7.29%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    #3695ef;
+  border-radius: 14px;
+  margin: 50px;
+  padding: 50px;
+}
+.Landing-getstarted--heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+}
+.Landing-getstarted--btns {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.Landing-getstarted--txt {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+
+  opacity: 0.5;
+}
+/* LANDING GET STARTED ENDS */
+
+@media (min-width: 2100px) {
+  .Landing-header--2-img img {
+    height: 800px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .Landing-header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .Landing-header--1-text {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .Landing-header--1-specific {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .Landing-header--2-img img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .Landing-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .Landing-header--1-text {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .Landing-header--1-specific {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .Landing-header--2-img img {
+    width: 180px;
+    height: 300px;
+  }
+  .Landing-header--2-text-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .Landing-header--2-text-job {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .Landing-header--2-text-stars {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .Landing-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .Landing-header--2-img img {
+    width: 150px;
+    height: 200px;
+    align-items: center;
+    z-index: -1;
+  }
+  .Landing-header--1-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .Landing-header--1-specific {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .Landing-header--2-text-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .Landing-header--2-text-job {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .Landing-header--2-text-stars {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .Landing-back {
+    clip-path: polygon(0 65%, 100% 49%, 100% 100%, 0 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 7.29%,
+        rgba(255, 255, 255, 0.1) 100%
+      ),
+      #3695ef;
+  }
+  .Landing-companies {
+    grid-gap: 15px;
+    z-index: 1;
+  }
+  .Landing-services-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Landing-services-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .Landing-services-card {
+    width: 250px;
+    height: 450px;
+  }
+  .Landing-services-card-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .Landing-services-card-btn {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    margin: 25px;
+    bottom: 0;
+  }
+  .Landing-howitworks {
+    padding: 20px;
+  }
+
+  .Landing-howitworks-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .Landing-howitworks-step {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .Landing-howitworks-step-card {
+    padding: 0px;
+  }
+
+  /* LANDING GET STARTED START */
+
+  .Landing-getstarted--heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .Landing-getstarted--btns {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /* LANDING GET STARTED ENDS */
+}
